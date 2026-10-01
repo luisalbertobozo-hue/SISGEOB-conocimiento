@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Errores Frecuentes SISGEOB y Mercado Público</title>
+
+<meta name="description"
+content="Resolución de errores frecuentes SISGEOB y Mercado Público">
+
+<style>
+
+body{
+    font-family:Segoe UI,Arial,sans-serif;
+    max-width:1200px;
+    margin:auto;
+    padding:40px;
+    line-height:1.7;
+}
+
+h1{
+    color:#003366;
+}
+
+h2{
+    color:#005a9c;
+    margin-top:40px;
+}
+
+.error{
+    border-left:5px solid #d13438;
+    background:#faf3f3;
+    padding:15px;
+    margin-bottom:25px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Errores Frecuentes SISGEOB y Mercado Público</h1>
+
+<div class="error">
+
+<h2>No aparece el botón SISGEOB</h2>
+
+<strong>Posibles causas:</strong>
+
+<ul>
+<li>La licitación no fue marcada como Contrato de Obra.</li>
+<li>La licitación aún no ha sido adjudicada.</li>
+<li>La licitación no corresponde a una obra pública.</li>
+</ul>
+
+<strong>Solución:</strong>
+
+<p>
+Verificar la marca Contrato de Obra y el estado del proceso.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>No encuentro la licitación en SISGEOB</h2>
+
+<strong>Posibles causas:</strong>
+
+<ul>
+<li>Licitación sin marca Contrato de Obra.</li>
+<li>Falta sincronización con Mercado Público.</li>
+<li>Entidad incorrecta.</li>
+</ul>
+
+</div>
+
+<div class="error">
+
+<h2>No puedo acceder al Formulario SISGEOB</h2>
+
+<strong>Solución:</strong>
+
+<p>
+Verificar que la licitación se encuentre adjudicada y marcada como Contrato de Obra.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>No puedo finalizar el Formulario SISGEOB</h2>
+
+<strong>Posibles causas:</strong>
+
+<ul>
+<li>Ubicación incompleta.</li>
+<li>Campos obligatorios sin completar.</li>
+<li>Líneas de adjudicación pendientes.</li>
+</ul>
+
+</div>
+
+<div class="error">
+
+<h2>El botón Enviar y Finalizar está deshabilitado</h2>
+
+<p>
+Todos los registros de ubicación y datos de la obra deben estar completos.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>Archivo KML rechazado</h2>
+
+<strong>Verificar:</strong>
+
+<ul>
+<li>Campo ID_MP.</li>
+<li>Campo name.</li>
+<li>Coordenadas geográficas.</li>
+<li>Sistema WGS84.</li>
+<li>Geometría válida.</li>
+</ul>
+
+</div>
+
+<div class="error">
+
+<h2>Error de estructura KML</h2>
+
+<p>
+Las intervenciones deben estar asociadas correctamente a la línea adjudicada correspondiente.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>El archivo KML se carga pero no se visualiza</h2>
+
+<p>
+Normalmente ocurre por diferencias de proyección o uso incorrecto del sistema de coordenadas.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>El sistema rechaza polígonos</h2>
+
+<p>
+SISGEOB solo admite geometrías de tipo Punto y Línea.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>No puedo dibujar sobre el mapa</h2>
+
+<p>
+Acercar el zoom hasta aproximadamente escala 1:5.000.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>Las herramientas de dibujo aparecen deshabilitadas</h2>
+
+<p>
+La vista debe alcanzar el nivel mínimo de detalle requerido por el sistema.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>Porcentaje de avance físico superior al 100%</h2>
+
+<p>
+El sistema no permite registrar avances mayores al 100%.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>Advertencia: avance físico menor al registrado previamente</h2>
+
+<p>
+Debe ingresar una observación justificando la disminución.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>No puedo editar un avance físico anterior</h2>
+
+<p>
+Solo es posible modificar el último avance registrado antes de finalizar el envío.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>Fecha real de inicio inválida</h2>
+
+<p>
+La fecha no puede ser anterior a la adjudicación ni a la fecha de inicio proveniente de Mercado Público.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>Fecha de estado de pago inválida</h2>
+
+<p>
+La fecha debe ser posterior a la adjudicación y al inicio real de la obra.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>No puedo registrar un estado de pago</h2>
+
+<p>
+Verificar fecha, monto contratado y estado del contrato.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>El porcentaje financiero supera el 100%</h2>
+
+<p>
+Revisar modificaciones de contrato y monto vigente de la obra.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>No puedo acceder a otros contenedores</h2>
+
+<p>
+Debe completarse el contenedor Inicio de Obras antes de habilitar los restantes módulos.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>No se recuperan datos desde SIAPER</h2>
+
+<p>
+Verificar el RUT ingresado y la existencia del funcionario en SIAPER.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>No puedo modificar información finalizada</h2>
+
+<p>
+Los registros finalizados requieren gestión mediante Mesa de Ayuda de Contraloría.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>La obra desapareció de la bandeja de ejecución</h2>
+
+<p>
+Verificar si fue finalizada, liquidada o terminó anticipadamente.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>No puedo registrar una liquidación</h2>
+
+<p>
+Verificar fecha, saldo, monto del saldo, reajustes y valores proforma.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>La recepción definitiva bloqueó otros módulos</h2>
+
+<p>
+Comportamiento esperado del sistema. Solo quedan disponibles las acciones permitidas según el estado de la obra.
+</p>
+
+</div>
+
+<div class="error">
+
+<h2>No se encuentran resultados de obras para la búsqueda especificada</h2>
+
+<strong>Solución:</strong>
+
+<ol>
+<li>Ir a Filtrar por.</li>
+<li>Seleccionar Estado.</li>
+<li>Elegir Todas.</li>
+<li>Repetir la búsqueda.</li>
+</ol>
+
+</div>
+
+<div class="error">
+
+<h2>No se encuentran resultados</h2>
+
+<p>
+No existen registros asociados al módulo consultado.
+</p>
+
+</div>
+
+</body>
+
+</html>
